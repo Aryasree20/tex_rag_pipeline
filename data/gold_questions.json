@@ -1,0 +1,51 @@
+[
+  {
+    "id": "q1",
+    "question": "What is the domestic travel reimbursement limit for meals and local transport?",
+    "expected_answer": "Employees travelling within India for approved business work may claim up to ₹3,000 per day for meals and local transport combined.",
+    "relevant_source_ids": [
+      "company_policy#domestic_travel_reimbursement"
+    ]
+  },
+  {
+    "id": "q2",
+    "question": "When do expense claims require manager approval?",
+    "expected_answer": "Claims above ₹5,000 require manager approval even when the expense category is normally pre-approved.",
+    "relevant_source_ids": [
+      "company_policy#expense_claim_documentation"
+    ]
+  },
+  {
+    "id": "q3",
+    "question": "What chunking strategy is recommended as a starting point for policy documents and reports?",
+    "expected_answer": "Recursive chunking with moderate overlap is a reliable starting point, often using 500 to 900 tokens and 10 to 20 percent overlap.",
+    "relevant_source_ids": [
+      "applied_rag_notes#chunking_guidelines"
+    ]
+  },
+  {
+    "id": "q4",
+    "question": "What should a RAG answer do if retrieved context does not contain enough evidence?",
+    "expected_answer": "It should say that the information is not available in the provided sources instead of making up an answer.",
+    "relevant_source_ids": [
+      "applied_rag_notes#grounded_generation_policy"
+    ]
+  },
+  {
+    "id": "q5",
+    "question": "How can a trainer avoid paying to re-embed the same documents during repeated demos?",
+    "expected_answer": "Persist the Chroma collection to disk and reuse it, instead of rebuilding embeddings every time.",
+    "relevant_source_ids": [
+      "support_handbook#chroma_persistence",
+      "support_handbook#demo_cost_control"
+    ]
+  },
+  {
+    "id": "q6",
+    "question": "What should be checked when retrieval returns irrelevant or empty results?",
+    "expected_answer": "Inspect the chunk text, metadata, query wording, collection path, and embedding model.",
+    "relevant_source_ids": [
+      "support_handbook#troubleshooting_empty_retrieval"
+    ]
+  }
+]
